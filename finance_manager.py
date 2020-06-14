@@ -19,8 +19,6 @@ pymysql.install_as_MySQLdb()
 
 db_url = "mysql://root:mysql@localhost:3306/finance?charset=utf8"
 engine = create_engine(db_url)
-sql = "select * from asset"
-df = pd.read_sql_query(sql, engine)
 Session = sessionmaker()
 Session.configure(bind=engine)
 session = Session()

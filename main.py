@@ -8,4 +8,6 @@ outcomes = [Outcome(**item) for item in outcome_data]
 
 incomes = [Income(**item) for item in income_data]
 
-FinanceManager.commit(assets + incomes + outcomes)
+FinanceManager.commit(incomes)
+# FinanceManager.commit(assets)
+# FinanceManager.commit(outcomes)
